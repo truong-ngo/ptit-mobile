@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Khung viền bo 4dp màu colorOutline, dùng chung cho Spinner và ô nhập của vùng lọc để các ô trông cùng một bộ. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <stroke
+        android:width="1dp"
+        android:color="?attr/colorOutline" />
+    <corners android:radius="4dp" />
+</shape>

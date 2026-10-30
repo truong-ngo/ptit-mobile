@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Nền Spinner: khung bg_outline cộng mũi tên thả xuống ở bên phải. Đặt nền riêng thì mất mũi tên mặc định của
+    Spinner, nên vẽ lại ở lớp thứ hai.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_outline" />
+    <item
+        android:drawable="@drawable/ic_arrow_drop_down"
+        android:gravity="center_vertical|end"
+        android:width="24dp"
+        android:height="24dp"
+        android:end="8dp" />
+</layer-list>

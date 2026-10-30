@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:padding="12dp">
+
+    <Spinner
+        android:id="@+id/spCategoryFilter"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_spinner_outline"
+        android:paddingStart="8dp"
+        android:paddingEnd="32dp" />
+
+    <Spinner
+        android:id="@+id/spConditionFilter"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/bg_spinner_outline"
+        android:paddingStart="8dp"
+        android:paddingEnd="32dp" />
+
+    <EditText
+        android:id="@+id/etMinPrice"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:autofillHints="@null"
+        android:background="@drawable/bg_outline"
+        android:hint="@string/book_filter_min_price"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="12"
+        android:paddingHorizontal="12dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etMaxPrice"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="@null"
+        android:background="@drawable/bg_outline"
+        android:hint="@string/book_filter_max_price"
+        android:imeOptions="actionSearch"
+        android:inputType="number"
+        android:maxLength="12"
+        android:paddingHorizontal="12dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnClearFilter"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/book_filter_clear"
+        app:cornerRadius="4dp" />
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/book_filter_apply"
+        app:cornerRadius="4dp" />
+
+</GridLayout>

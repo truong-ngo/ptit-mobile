@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">course_project</string>
+    <string name="logo">logo</string>
+    <string name="login_text">ĐĂNG NHẬP</string>
+    <string name="msv_placeholder">Nhập mã sinh viên (MSSV)</string>
+    <string name="list_friend">DANH SÁCH BẠN BÈ</string>
+    <string name="student_info">K24DTCN394 - Ngô Xuân Trường</string>
+    <string name="subject_info">Lập trình ứng dụng di động • PTIT</string>
+    <string name="employee_list">DANH SÁCH NHÂN SỰ</string>
+    <string name="employee_search_hint">Tìm theo mã hoặc tên...</string>
+    <string name="plus">+</string>
+    <string name="back">←</string>
+    <string name="add_employee">THÊM MỚI NHÂN SỰ</string>
+    <string name="edit_employee">CHỈNH SỬA NHÂN SỰ</string>
+    <string name="image_upload_desc">Image upload</string>
+    <string name="touch_to_upload">Chạm để chọn ảnh</string>
+    <string name="emp_code_label">Mã nhân sự (*)</string>
+    <string name="emp_code_hint">Ví dụ: NS01</string>
+
+    <!-- Họ và tên -->
+    <string name="emp_name_label">Họ và tên (*)</string>
+    <string name="emp_name_hint">Ví dụ: Nguyễn Văn Nam</string>
+
+    <!-- Năm sinh & Giới tính -->
+    <string name="birth_year_label">Năm sinh</string>
+    <string name="birth_year_hint">1998</string>
+    <string name="gender_label">Giới tính</string>
+    <string name="gender_male">Nam</string>
+    <string name="gender_female">Nữ</string>
+
+    <!-- Quê quán -->
+    <string name="hometown_label">Quê quán</string>
+    <string name="hometown_hint">Ví dụ: Hà Nội, Nam Định...</string>
+
+    <!-- Trình độ & Phòng ban -->
+    <string name="education_level_label">Trình độ</string>
+    <string name="department_label">Phòng ban (*)</string>
+
+    <!-- Mức lương -->
+    <string name="salary_label">Mức lương (VNĐ) (*)</string>
+    <string name="salary_hint">Ví dụ: 15000000</string>
+
+    <!-- Các nút thao tác -->
+    <string name="btn_delete">XÓA</string>
+    <string name="btn_save">LƯU DỮ LIỆU</string>
+    <string name="btn_update">CẬP NHẬT</string>
+
+    <!-- Danh sách Phòng ban (4 phòng ban bắt buộc) -->
+    <string-array name="array_departments">
+        <item>Hành chính</item>
+        <item>Phần mềm</item>
+        <item>Kỹ thuật</item>
+        <item>Dự án</item>
+    </string-array>
+
+    <!-- Danh sách Trình độ học vấn -->
+    <string-array name="array_education_levels">
+        <item>Đại học</item>
+        <item>Cao đẳng</item>
+        <item>Thạc sĩ</item>
+        <item>Tiến sĩ</item>
+        <item>Trung cấp</item>
+    </string-array>
+
+    <!-- Danh sách tùy chọn Sắp xếp Lương -->
+    <string-array name="array_sort_salary">
+        <item>Mặc định</item>
+        <item>Lương: Thấp ➔ Cao</item>
+        <item>Lương: Cao ➔ Thấp</item>
+    </string-array>
+</resources>

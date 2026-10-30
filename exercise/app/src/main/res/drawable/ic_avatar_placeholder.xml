@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Nền xám nhạt -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2z" />
+    <!-- Đầu người -->
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M12,6c1.93,0 3.5,1.57 3.5,3.5S13.93,13 12,13s-3.5,-1.57 -3.5,-3.5S10.07,6 12,6z" />
+    <!-- Thân người -->
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M12,14.5c-2.67,0 -8,1.34 -8,4V20h16v-1.5c0,-2.66 -5.33,-4 -8,-4z" />
+</vector>

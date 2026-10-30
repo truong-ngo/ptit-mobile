@@ -1,0 +1,42 @@
+# Add project specific R8 rules here.
+# AGP will combine all keep rule files in src/main/keepRules to pass to R8
+#
+# For more details, see
+#   https://d.android.com/r/tools/r8/keep-rules
+
+# ViewBinder (libs/util) điền view vào container bằng reflection: giữ annotation, các field @ViewId
+# và constructor không tham số của lớp chứa chúng, nếu không bản release (R8) sẽ làm hỏng binding.
+-keepattributes RuntimeVisibleAnnotations
+-keep @interface vn.truongngo.course_project.libs.util.ViewId
+-keepclasseswithmembers class * {
+    @vn.truongngo.course_project.libs.util.ViewId <fields>;
+    <init>();
+}
+
+# ORM (libs/repository) quét lớp thực thể bằng reflection: giữ annotation, constructor không tham số và field
+# của các lớp gắn @Table, và hàm values/valueOf của enum (Enum.valueOf khi đọc cột).
+-keep @interface vn.truongngo.course_project.libs.repository.annotation.*
+-keep @vn.truongngo.course_project.libs.repository.annotation.Table class * {
+    <init>();
+    <fields>;
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+# Form (libs/form) đọc @FormField và các annotation kiểm tra trên field của model bằng reflection, và tạo model
+# bằng constructor không tham số (FormBinder.read).
+-keep @interface vn.truongngo.course_project.libs.form.annotation.*
+-keep @interface vn.truongngo.course_project.libs.form.validation.*
+-keepclasseswithmembers class * {
+    @vn.truongngo.course_project.libs.form.annotation.FormField <fields>;
+    <init>();
+}
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
